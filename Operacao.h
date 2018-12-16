@@ -1,6 +1,7 @@
 #ifndef OPERACAO_H
 #define OPERACAO_H
 
+#include "Conta.h"
 #include <iostream>
 
 using namespace std;
@@ -11,16 +12,17 @@ class Operacao{
 		float getValor();
 		void setDescricao(string);
 		string getDescricao();
-		void setData(/*date*/);
-		//date getData();
-		void registrarOperacao(/*Conta*/);
+		// Não há implementação nativa duma biblioteca date em C++, logo foi implementado um método para receber a data atual.
+		string getData();
+		void registrarOperacao(Conta);
 		void gravarOperacaoEmArquivo(string);
 		void lerOperacaoDoArquivo(string);
+		void ajustarValor(); 
 		
 	private:
 		float valor;
 		string descricao;
-		//date data;
+		string data;
 };
 
 #endif
