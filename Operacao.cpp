@@ -19,6 +19,7 @@ string Operacao::getDescricao(){
 }
 
 string Operacao::getData(){
+	return data.getDate();
 }
 
 void Operacao::registrarOperacao(Conta c){
