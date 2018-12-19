@@ -29,15 +29,15 @@ void Operacao::registrarOperacao(Conta c){
 	c.emitirNotificacao();
 }
 
-void Operacao::gravarOperacaoEmArquivo(list<Usuario> lst){
-	list<Usuario>::iterator it;
+void Operacao::gravarOperacaoEmArquivo(list<Conta> lst){
+	list<Conta>::iterator it;
 	
 	ofstream fp("log_de_operacoes.txt", std::ofstream::in);
 		
 	for(it=lst.begin(); it != lst.end(); it++){
 		fp << "Horario: " << getData();
-		fp << "Usuario: " << it->nome << endl; 
-		fp << "Saldo: " << it->saldo  << endl;
+		fp << "Usuario: " << it->getNome() << endl; 
+		fp << "Saldo: " << it->getSaldo()  << endl;
 	}
 	
 	fp.close();

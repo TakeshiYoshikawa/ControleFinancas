@@ -20,7 +20,7 @@ class Operacao: public Date{
 		string getData();
 		
 		void registrarOperacao(Conta);
-		void gravarOperacaoEmArquivo(list<Usuario>);
+		void gravarOperacaoEmArquivo(list<Conta>);
 		void lerOperacaoDoArquivo(string);
 		void ajustarValor(); 
 		
