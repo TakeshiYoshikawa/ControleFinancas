@@ -20,7 +20,6 @@ float Conta::getSaldo(){
 	return saldo;
 }
 
-
 string Conta::emitirNotificacao(){
 	string notificacao = "!";
 	cout << getNome() << endl;

@@ -5,7 +5,6 @@
 #include <cstdlib>
 
 #include "Date.h"
-#include "Usuario.h"
 #include "Conta.cpp"
 #include "Operacao.cpp"
 using namespace std;
@@ -34,11 +33,13 @@ int main(int argc, char **argv){
 				cout << "Digite o nome do usuario: ";
 				cin >> nome;
 				c.setNome(nome);
+				system("cls");
 				break;
 			case(2):
 				cout << "Digite o saldo da conta: ";
 				cin >> saldo;
 				c.setSaldo(saldo);
+				system("cls");
 				break;
 			case(3):
 				cout << "Insira o valor a ser creditado: ";
@@ -46,26 +47,16 @@ int main(int argc, char **argv){
 			case(4):
 				break;
 			case(5):
+				system("cls");
+				lst.push_back(c);
 				o.gravarOperacaoEmArquivo(lst);
+				o.lerOperacaoDoArquivo();
 				break;
 			case(6):
 				system("cls");
 				cout << "Finalizado.";
 				key = false;
 		}
-		
 	}
-	
-	/*
-	list<Usuario> lst;
-	Usuario u;
-	Operacao o;
-	u.nome = "Carlos";
-	u.saldo = 100;
-	
-	lst.push_back(u);
-	
-	o.gravarOperacaoEmArquivo(lst);
-	*/
 	return (0);
 }

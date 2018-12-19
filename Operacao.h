@@ -3,7 +3,6 @@
 
 #include "Conta.h"
 #include "Date.h"
-#include "Usuario.h"
 #include <list>
 #include <iostream>
 
@@ -21,7 +20,7 @@ class Operacao: public Date{
 		
 		void registrarOperacao(Conta);
 		void gravarOperacaoEmArquivo(list<Conta>);
-		void lerOperacaoDoArquivo(string);
+		void lerOperacaoDoArquivo();
 		void ajustarValor(); 
 		
 	private:
