@@ -24,15 +24,6 @@ float Conta::getSaldo(){
 string Conta::emitirNotificacao(){
 	string notificacao = "!";
 	cout << getNome() << endl;
-	cout << getSaldo() << endl;
-	cout << getMeta() << endl;
 	return notificacao;
 }
 
-void Conta::setMeta(float m){
-	meta = m;
-}
-
-float Conta::getMeta(){
-	return meta;
-}

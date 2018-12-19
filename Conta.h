@@ -12,13 +12,10 @@ class Conta{
 		void setSaldo(float);
 		float getSaldo();
 		string emitirNotificacao();
-		void setMeta(float);
-		float getMeta();
-		
+	
 	private:
 		string nome;
 		float saldo;
-		float meta;
 };
 
 #endif
