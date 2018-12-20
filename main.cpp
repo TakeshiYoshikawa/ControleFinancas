@@ -12,8 +12,10 @@ using namespace std;
 int main(int argc, char **argv){
 	int opcao;
 	float saldo;
-	string nome;
+	float credito;
 	bool key = true;
+	
+	string nome;
 	Operacao o;
 	Conta c;
 	list<Conta> lst;
@@ -43,6 +45,12 @@ int main(int argc, char **argv){
 				break;
 			case(3):
 				cout << "Insira o valor a ser creditado: ";
+				cin >> credito;
+				o.setValor(credito);
+				c.setSaldo(c.getSaldo() + o.getValor());
+				lst.push_back(c);
+				o.gravarOperacaoEmArquivo(lst);
+				system("cls");
 				break;
 			case(4):
 				break;

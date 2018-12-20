@@ -1,39 +1,12 @@
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: 
-Saldo: 0
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: 
-Saldo: 0
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: 
-Saldo: 0
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: 
-Saldo: 0
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: 
-Saldo: 0
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: 
-Saldo: 0
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: 
-Saldo: 0
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: asd
-Saldo: 11343
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: asd
-Saldo: 11343
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: asd
-Saldo: 11343
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: asd
-Saldo: 11343
-Horario: Wed Dec 19 21:49:38 2018
-Usuario: asd
-Saldo: 11343
-Horario: Wed Dec 19 21:49:38 2018
+Horario: Thu Dec 20 00:42:13 2018
 Usuario: takeshi
-Saldo: 11343
+Saldo: 500
+Horario: Thu Dec 20 00:42:13 2018
+Usuario: takeshi
+Saldo: 650
+Horario: Thu Dec 20 00:42:13 2018
+Usuario: takeshi
+Saldo: 900
+Horario: Thu Dec 20 00:42:13 2018
+Usuario: takeshi
+Saldo: 2000

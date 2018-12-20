@@ -1,5 +1,4 @@
 #include "Operacao.h"
-#include "Usuario.h"
 
 #include <iostream>
 #include <list>
@@ -26,7 +25,6 @@ string Operacao::getData(){
 }
 
 void Operacao::registrarOperacao(Conta c){
-	c.emitirNotificacao();
 }
 
 void Operacao::gravarOperacaoEmArquivo(list<Conta> lst){
@@ -43,8 +41,20 @@ void Operacao::gravarOperacaoEmArquivo(list<Conta> lst){
 	fp.close();
 }
 
-//void lerOperacaoDoArquivo(string);
+void Operacao::lerOperacaoDoArquivo(){
+	std::string line;
+	ifstream fp("log_de_operacoes.txt");
+	if(fp.is_open()){
+		while(getline(fp, line)){
+			cout << line << endl;
+		}
+	}
+	fp.close();
+}
 
+void Operacao::ajustarCredito(Conta c){
+	c.setSaldo(c.getSaldo() + valor);
+}
 
 
 

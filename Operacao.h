@@ -21,7 +21,8 @@ class Operacao: public Date{
 		void registrarOperacao(Conta);
 		void gravarOperacaoEmArquivo(list<Conta>);
 		void lerOperacaoDoArquivo();
-		void ajustarValor(); 
+		void ajustarCredito(Conta);
+		void ajustarDebito(Conta, float); 
 		
 	private:
 		float valor;
